@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#110712">
+    <title>Candice — The Only Match ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="ambient ambient-three"></div>
+    <div class="noise"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <main class="shell">
+        <section class="screen intro-screen" id="introScreen">
+            <div class="intro-card">
+                <div class="brand">
+                    <div class="brand-mark">K</div>
+                    <div>
+                        <p class="brand-kicker">Private dating experience</p>
+                        <h1>Kandice Match</h1>
+                    </div>
+                </div>
+
+                <div class="hero-preview">
+                    <div class="preview-card preview-left">
+                        <img src="assert/photo2.jpeg" alt="Candice version 2">
+                    </div>
+
+                    <div class="preview-card preview-main">
+                        <img src="assert/photo1.jpeg" alt="Candice">
+                        <div class="preview-gradient"></div>
+                        <div class="preview-content">
+                            <span>15 versions disponibles</span>
+                            <h2>Une seule gagnante</h2>
+                        </div>
+                    </div>
+
+                    <div class="preview-card preview-right">
+                        <img src="assert/photo3.jpeg" alt="Candice version 3">
+                    </div>
+                </div>
+
+                <div class="intro-copy">
+                    <p class="eyebrow">Blonde · Heels · Beaucoup trop forte</p>
+                    <h2>Une app de dating. Quinze Candice. Un seul vrai choix.</h2>
+                    <p>
+                        L’algorithme va te présenter plusieurs versions supposément différentes de Candice.
+                        À toi de dire Oui ou Non. Enfin… surtout Oui.
+                    </p>
+                </div>
+
+                <div class="intro-actions">
+                    <button class="primary-button" id="startButton">Lancer l’expérience</button>
+                    <a class="ghost-link" href="https://kandyyyfeet.com" target="_blank" rel="noopener noreferrer">
+                        Voir kandyyyfeet.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="screen app-screen hidden" id="appScreen">
+            <header class="topbar">
+                <div class="profile-mini">
+                    <div class="profile-avatar">
+                        <img src="assert/photo1.jpeg" alt="Candice">
+                    </div>
+                    <div>
+                        <p class="profile-label">Algorithme actif</p>
+                        <h2>Kandice Match</h2>
+                    </div>
+                </div>
+                <button class="reset-button" id="resetButton" aria-label="Recommencer">↻</button>
+            </header>
+
+            <section class="algorithm-panel">
+                <div class="algorithm-top">
+                    <p class="eyebrow">Analyse du profil</p>
+                    <span id="compatibilityPercent">0%</span>
+                </div>
+                <h3 id="algorithmTitle">Chargement du profil...</h3>
+                <div class="algorithm-bars">
+                    <div class="algo-row"><span>Charme</span><div><i id="barCharm"></i></div></div>
+                    <div class="algo-row"><span>Style</span><div><i id="barStyle"></i></div></div>
+                    <div class="algo-row"><span>Danger pour le Non</span><div><i id="barDanger"></i></div></div>
+                </div>
+            </section>
+
+            <section class="progress-card">
+                <div class="progress-row">
+                    <span id="progressLabel">Profil 1 sur 15</span>
+                    <span id="yesLabel">0 oui</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+            </section>
+
+            <section class="deck" id="deck"></section>
+
+            <section class="message-card" id="messageCard">
+                <p id="messageText">Analyse de la beauté en cours...</p>
+            </section>
+
+            <section class="actions">
+                <button class="choice-button no-button" id="noButton" aria-label="Non">
+                    <span class="choice-icon">✕</span><span class="choice-label">Non</span>
+                </button>
+                <button class="choice-button yes-button" id="yesButton" aria-label="Oui">
+                    <span class="choice-icon">♥</span><span class="choice-label">Oui</span>
+                </button>
+            </section>
+
+            <p class="mobile-hint">Swipe à droite pour dire oui. Swipe à gauche pour tester l’impossible.</p>
+        </section>
+
+        <section class="match-overlay hidden" id="matchOverlay">
+            <div class="match-box">
+                <div class="match-heart">💘</div>
+                <p class="eyebrow">It’s a match</p>
+                <h2 id="matchTitle">Encore un match évident.</h2>
+                <p id="matchText">L’algorithme commence à comprendre quelque chose...</p>
+                <button class="primary-button" id="continueButton">Continuer</button>
+            </div>
+        </section>
+
+        <section class="screen final-screen hidden" id="finalScreen">
+            <div class="final-card">
+                <div class="final-orb">👑</div>
+                <p class="eyebrow">Révélation finale</p>
+                <h2>Ce n’était pas 15 profils différents.</h2>
+                <p>
+                    C’était Candice sous toutes ses formes. Candice, Kandice, Kandy, Queen Candice,
+                    Candice Final Boss. Quinze versions, quinze styles, quinze raisons de dire Oui.
+                </p>
+
+                <div class="final-grid">
+                    <div><strong id="finalYesCount">15</strong><span>Oui validés</span></div>
+                    <div><strong id="finalNoAttempts">0</strong><span>Non tentés</span></div>
+                    <div><strong>0</strong><span>Non acceptés</span></div>
+                    <div><strong>∞</strong><span>Narcissisme justifié</span></div>
+                </div>
+
+                <section class="love-letter">
+                    <h3>Lettre officielle</h3>
+                    <p>
+                        Candice,<br><br>
+                        Après analyse complète des quinze profils, le résultat est sans appel.
+                        Le site a essayé de faire croire qu’il y avait plusieurs choix. Mais en réalité,
+                        il n’y avait qu’une seule évidence : toi. Blonde, forte, élégante, dangereuse pour
+                        le bouton Non, et beaucoup trop sûre de toi pour ne pas avoir raison.
+                        <br><br>Alors oui. Encore oui. Toujours oui.
+                    </p>
+                </section>
+
+                <section class="gallery-final">
+                    <h3>Les 15 preuves</h3>
+                    <div class="gallery-grid" id="galleryGrid"></div>
+                </section>
+
+                <a class="site-button" href="https://kandyyyfeet.com" target="_blank" rel="noopener noreferrer">Kandyyyfeet.com</a>
+                <button class="primary-button" id="restartFinalButton">Revoir les profils</button>
+            </div>
+        </section>
+    </main>
+
+    <div class="toast hidden" id="toast"><p id="toastText">C’est le bon choix ❤️</p></div>
+    <script src="script.js"></script>
+</body>
+</html>
